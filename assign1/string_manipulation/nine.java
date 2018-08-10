@@ -1,0 +1,22 @@
+import java.io.*;
+
+class nine
+{
+	public static void main(String args[]) throws Exception {
+		DataInputStream stream = new DataInputStream(System.in);
+		String k1,k2,p;
+		k1 = stream.readLine();
+		int index = 0;
+		for(int i=0; i < k1.length();i++){
+			if(k1.charAt(i) == 'x'){
+				index = i;
+				System.out.println(k1.charAt(index+1));
+				return;
+			}
+		}
+		System.out.println("No x present");
+		
+		
+	}
+	
+}
