@@ -74,7 +74,7 @@ class point{
 		vector dir_pq = point.dir(p,q);
 		vector dir_qr = point.dir(q,r);
 		vector cp = dir_pq.cross_product(dir_pq,dir_qr);
-		return cp.magnitude()/2;
+		return cp.magnitude();
 	}
 
 }

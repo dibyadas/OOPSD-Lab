@@ -1,0 +1,34 @@
+import java.io.*;
+import java.lang.*;
+
+class kapil{
+	public static void main(String[] args) throws Exception {
+		String a = " ", n;
+		int i;
+		stack x;
+		x = new Stack();
+		DataInputStream k = new DataInputStream(System.in);
+		do {
+			a = k.readLine();
+			i = a.indexOf(' ');
+			if(i != -1){
+				b = a.substring(0,i);
+			} else {
+				b = a;
+			}
+			if(b.compareTo("put") == 0)
+				x.put(a.substring(i+1));
+
+			if(b.compareTo("take") == 0)
+				System.out.println("The taken element "+ x.take());
+
+			if(b.compareTo("top") == 0)
+				System.out.println("The first element "+ x.top());
+
+			if(b.compareTo("print") == 0) { 
+				x.pt()
+				System.out.println();
+			}
+		}while(b.compareTo("exit")!=0);
+	}
+}
