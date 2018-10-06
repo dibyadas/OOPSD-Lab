@@ -50,7 +50,9 @@ public class gr extends Applet{
 		int new_side = x;
 		int c = 0;
 		while(new_side > y){
+			setForeground(Color.red);
 			drawSquare(flag,350,150,new_side,g);
+			setForeground(Color.blue);
 			g.drawOval(350-(new_side/2),150-(new_side/2),new_side,new_side);
 			if( flag == 90){
 				flag = 45;
